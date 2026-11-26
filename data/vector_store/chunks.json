@@ -1,0 +1,1179 @@
+[
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p1::c0",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 1,
+    "chunk_index": 0,
+    "text": "Data Structures\nIntroduction\nData Structures-Introduetion",
+    "char_count": 57,
+    "word_count": 5,
+    "keywords": [
+      "data",
+      "structures",
+      "introduction",
+      "structures-introduetion"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p2::c1",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 2,
+    "chunk_index": 1,
+    "text": "Big-O Analysis\nBig-O describes how the running time (or\nmemory use) of an algorithm grows with input\nsize n, focusing on the dominant term as n\nbecomes large.\nItisa mathematical wayto describehowthe\ntime or space (memory) required by an\nalgorithm grows as the input size grows.\nIf we let:\n-n = size of the input\n- T(n) = time taken by the algorithm\nThen Big Odescribes the upper bound of the growth rate as n\nbecomeslarge.\nItfocuses on scalability,notexactexecutiontime.\nData Structures -Introduetion",
+    "char_count": 500,
+    "word_count": 82,
+    "keywords": [
+      "algorithm",
+      "grows",
+      "input",
+      "size",
+      "big-o",
+      "memory",
+      "analysis",
+      "describes"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p3::c2",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 3,
+    "chunk_index": 2,
+    "text": "Big-OAnalysis\nWe ignore constant factors (e.g., 3n vs.n)and\nlower-order terms (e.g., n^2 + n = n^2) because,\nfor large inputs, the largest-growing term\ndominates performance.\nThis lets us compare algorithms in a\nmachine-and implementation-agnostic way.For\nexample,O(nlogn)will eventuallybeat O(n/2)\nno matter how fast the computer or compiler is.\nData Structures-Introduetion",
+    "char_count": 375,
+    "word_count": 49,
+    "keywords": [
+      "big-oanalysis",
+      "ignore",
+      "constant",
+      "factors",
+      "lower-order",
+      "terms",
+      "large",
+      "inputs"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p4::c3",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 4,
+    "chunk_index": 3,
+    "text": "Big-OAnalysis\nIncomputerscienceandAl(especiallyindeep\nlearning and large datasets), Big O helps us:\n-Comparealgorithms objectively\n- Predict performance for large data\n-Choose efficientsolutions\n-. Understand bottlenecks\nForexample:\n-Sorting 10 items is easy\n-Sorting 10 million items requires efficiency\nData Structures-Introduetion",
+    "char_count": 333,
+    "word_count": 37,
+    "keywords": [
+      "large",
+      "data",
+      "sorting",
+      "items",
+      "big-oanalysis",
+      "incomputerscienceandal",
+      "especiallyindeep",
+      "learning"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p5::c4",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 5,
+    "chunk_index": 4,
+    "text": "Analysis of Algorithms\nEfficiencymeasure\n- how long the program runs\n-howmuchmemoryituses\nWhy analyze at all?\n- Decide what algorithm to implement before\nactually doing it\n- Given code, get a sense for where bottlenecks\nmust be, without actually measuring it\nData Structures -Introduetion",
+    "char_count": 288,
+    "word_count": 43,
+    "keywords": [
+      "actually",
+      "analysis",
+      "algorithms",
+      "efficiencymeasure",
+      "long",
+      "program",
+      "runs",
+      "howmuchmemoryituses"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p6::c5",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 6,
+    "chunk_index": 5,
+    "text": "Analysis of Algorithms\nEfficiencymeasure\n- how long the program runs\ntimecomplexity\n-howmuchmemoryituses\nspacecomplexity\nWhy analyze at all?\n- Decide what algorithm to implement before\nactually doing it\n- Given code, get a sense for where bottlenecks\nmust be, without actually measuring it\nData Structures-Introduetion",
+    "char_count": 318,
+    "word_count": 44,
+    "keywords": [
+      "actually",
+      "analysis",
+      "algorithms",
+      "efficiencymeasure",
+      "long",
+      "program",
+      "runs",
+      "timecomplexity"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p7::c6",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 7,
+    "chunk_index": 6,
+    "text": "Asymptotic Analysis\n. Complexity as a function of input size n\nT(n) = 4n + 5\nT(n) = 0.5 n log n- 2n + 7\nT(n) = 2n + n3 + 3n\nWhat happens as n grows?\nData Structures- Introduction",
+    "char_count": 178,
+    "word_count": 40,
+    "keywords": [
+      "asymptotic",
+      "analysis",
+      "complexity",
+      "function",
+      "input",
+      "size",
+      "log",
+      "happens"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p8::c7",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 8,
+    "chunk_index": 7,
+    "text": "WhyAsymptotic Analysis?\nMost algorithms are fast for small n\nTime difference too small to be noticeable\n- External things dominate (OS, disk I/O, ...)\n: BUT n is often large in practice\n- Databases, internet, graphics, ...\n. Difference really shows up as n grows!\nData Structures-Introduction",
+    "char_count": 292,
+    "word_count": 47,
+    "keywords": [
+      "small",
+      "difference",
+      "whyasymptotic",
+      "analysis",
+      "algorithms",
+      "fast",
+      "too",
+      "noticeable"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p9::c8",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 9,
+    "chunk_index": 8,
+    "text": "Exercise - Searching\n16\n37\n50\n73\n75\n126\nbool ArrayFind(int array[l, int n, int key)f\nll Insertyouralgorithmhere\nWhatalgorithmwouldyou\nchoosetoimplementthiscode\nsnippet?\nData Structures-Introduction",
+    "char_count": 197,
+    "word_count": 23,
+    "keywords": [
+      "int",
+      "exercise",
+      "searching",
+      "bool",
+      "arrayfind",
+      "array",
+      "key",
+      "insertyouralgorithmhere"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p10::c9",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 10,
+    "chunk_index": 9,
+    "text": "Linear Search Analysis\nbool LinearArrayFind(int array[l,\nint n,\nintkey)\nBest Case:\nfor(int i=o;i<n;i++){\nif( array[i] == key)\nII Found it!\nWorst Case:\nreturn true;\nreturn false;\nData Structures-Introduetion\n10",
+    "char_count": 209,
+    "word_count": 29,
+    "keywords": [
+      "int",
+      "array",
+      "case",
+      "return",
+      "linear",
+      "search",
+      "analysis",
+      "bool"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p11::c10",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 11,
+    "chunk_index": 10,
+    "text": "Analysis of Algorithms\n. The best case is the minimum time (or\nsteps) an algorithm takes for any valid input\nof size n. It represents the most favorable\nscenario.\nThe worst case is the maximum time (or\nsteps) an algorithm takes for any valid input\nof size n. It represents the least favorable\nscenario.\nData Structures-Introduetion",
+    "char_count": 331,
+    "word_count": 56,
+    "keywords": [
+      "case",
+      "steps",
+      "algorithm",
+      "takes",
+      "valid",
+      "input",
+      "size",
+      "represents"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p12::c11",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 12,
+    "chunk_index": 11,
+    "text": "Analysis of Algorithms\n: 0(1)\n. O(n)\nData Structures-Introduetion\n12",
+    "char_count": 68,
+    "word_count": 10,
+    "keywords": [
+      "analysis",
+      "algorithms",
+      "data",
+      "structures-introduetion"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p13::c12",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 13,
+    "chunk_index": 12,
+    "text": "Binary SearchAnalysis\nbool BinArrayFind( int arrayl],int low,\ninthigh, int key)\nIll Thesubarrayisempty\nif(low >high )return false;\nBest case:\nll Searchthis subarrayrecursively\nint mid = (high + low) /2;\nif(key==array[mid])\nreturn true;\nWorst case:\nelseif(key<array[mid])(\nreturn BinArrayFind( array, low,\nmid-l, key );\nI else f\nreturn BinArrayFind( arraY, mid+l,\nhigh,key);\nData Structures-Introduetion\n13",
+    "char_count": 405,
+    "word_count": 52,
+    "keywords": [
+      "key",
+      "int",
+      "low",
+      "return",
+      "array",
+      "binarrayfind",
+      "high",
+      "mid"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p14::c13",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 14,
+    "chunk_index": 13,
+    "text": "Solving RecurrenceRelations\n1.Determine the recurrence relation. What is/are the base\ncase(s)?\n2.Expand\"the original relation to find an equivalent general\nexpression in terms ofthe number of expansions.\n3. Find a closed-form expression by setting the number of\nexpansionsto a value which reduces the problemto a\nbasecase\nData Structures-Introduetion\n14",
+    "char_count": 353,
+    "word_count": 48,
+    "keywords": [
+      "relation",
+      "find",
+      "expression",
+      "number",
+      "solving",
+      "recurrencerelations",
+      "determine",
+      "recurrence"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+Lec+2+G+CP_e94110::p15::c14",
+    "doc_id": "DS+Lec+2+G+CP_e94110",
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "page": 15,
+    "chunk_index": 14,
+    "text": "Data Structures\nAsymptoticAnalysis\nData Structures-Introduetion\n15",
+    "char_count": 66,
+    "word_count": 6,
+    "keywords": [
+      "data",
+      "structures",
+      "asymptoticanalysis",
+      "structures-introduetion"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p1::c15",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 1,
+    "chunk_index": 15,
+    "text": "Data Structures",
+    "char_count": 15,
+    "word_count": 2,
+    "keywords": [
+      "data",
+      "structures"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p3::c16",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 3,
+    "chunk_index": 16,
+    "text": "Justification\nHowever, as engineers, you will not be\npaid to say:\nMethod A is better than Method B\nor\nAlgorithm A is faster than Algorithm B\nSuch comparisons are said to be\nqualitative:\nqualitative, a. Relating to, connected or concerned with, quality or qualities\nNow usually in implied or expressed opposition to quantitative.",
+    "char_count": 328,
+    "word_count": 53,
+    "keywords": [
+      "method",
+      "algorithm",
+      "qualitative",
+      "justification",
+      "however",
+      "engineers",
+      "paid",
+      "say"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p4::c17",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 4,
+    "chunk_index": 17,
+    "text": "Justification\nQualitative statements cannot guide engineering\ndesign decisions:\n- Algorithm A could be better than Algorithm B, but\nAlgorithm A would require three person weeks to\nimplement, test, and integrate while Algorithm B\nhas already been implemented and has been\nused for the past year\n- There are circumstances where it may beneficial\nto use Algorithm A, but not based on the word\nbetter",
+    "char_count": 396,
+    "word_count": 64,
+    "keywords": [
+      "algorithm",
+      "better",
+      "justification",
+      "qualitative",
+      "statements",
+      "cannot",
+      "guide",
+      "engineering"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p5::c18",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 5,
+    "chunk_index": 18,
+    "text": "Justification\nThus, we will look at a quantitative means\nof describing data structures and\nalgorithms:\nquantitative, a. Relating to, concerned with, quantity or its measurement;\nascertaining or expressing quantity.OED\nThis will be based on mathematics, and\nthereforewewill lookatanumberof\nproperties which will be used again and\nagain throughout this course",
+    "char_count": 357,
+    "word_count": 49,
+    "keywords": [
+      "quantitative",
+      "quantity",
+      "again",
+      "justification",
+      "thus",
+      "means",
+      "describing",
+      "data"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p6::c19",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 6,
+    "chunk_index": 19,
+    "text": "Floor and ceiling functions",
+    "char_count": 27,
+    "word_count": 4,
+    "keywords": [
+      "floor",
+      "ceiling",
+      "functions"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p7::c20",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 7,
+    "chunk_index": 20,
+    "text": "Floorandceilingfunctions\nThe floor function maps any real number x onto the greatest integer less\nthan or equal to x:\n[3.2]= [3] =3\nL-5.2]=[-6]= -6\n-Consider it rounding towards negative infinity\nThe ceiling function maps x onto the least integer greater\nthan or equal to x:\n[3.2]= [4] =4\n[-5.2]=[-5] = -5\nConsideritroundingtowardspositiveinfinity\nThecmathlibraryimplementstheseas\nNecessarybecause double\nhave a range just under 21024\nlong can onlyrepresent\nnumbers as large as 2631\ndoublefloor( double );\ndoubleceil( double );",
+    "char_count": 527,
+    "word_count": 75,
+    "keywords": [
+      "double",
+      "function",
+      "maps",
+      "onto",
+      "integer",
+      "equal",
+      "floorandceilingfunctions",
+      "floor"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p8::c21",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 8,
+    "chunk_index": 21,
+    "text": "L'Hopital's rule\nIf you are attempting to determine\nlim\nbut both lim f(n)= limg(n)= oo, it follows\nlim\nn-00\nRepeat as necessary..:\nNote: the kth derivative will always be shown as f(*) (n)",
+    "char_count": 188,
+    "word_count": 33,
+    "keywords": [
+      "lim",
+      "hopital",
+      "rule",
+      "attempting",
+      "determine",
+      "both",
+      "limg",
+      "follows"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p9::c22",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 9,
+    "chunk_index": 22,
+    "text": "wnere f (+ (n)means tne lurst iorwara auierence\nf(1)(n) = f(n + 1) - f(n).",
+    "char_count": 74,
+    "word_count": 15,
+    "keywords": [
+      "wnere",
+      "means",
+      "tne",
+      "lurst",
+      "iorwara",
+      "auierence"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p10::c23",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 10,
+    "chunk_index": 23,
+    "text": "Logarithms\nWe will begin with a review of logarithms:\nIf n = em, we define\nm = ln( n )\nIt is always true that eln(n) = n; however,\nln(en) = n requires that n is real",
+    "char_count": 165,
+    "word_count": 37,
+    "keywords": [
+      "logarithms",
+      "begin",
+      "review",
+      "define",
+      "always",
+      "true",
+      "eln",
+      "however"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p11::c24",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 11,
+    "chunk_index": 24,
+    "text": "· Example 1\nn=\nln(n) =\n· Example 2\nn=1\nln(1) =\nBecause\n·Example3\n0.5\nln(n) =",
+    "char_count": 76,
+    "word_count": 17,
+    "keywords": [
+      "example3"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p12::c25",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 12,
+    "chunk_index": 25,
+    "text": "· Example 1\nn=\nIn(n) = 3.\n· Example 2\nn=1\nIn(1) = 0,\nBecause\neo = 1.\n·Example3\ne0.5\nn=\nIn(n) = 0.5.\n12",
+    "char_count": 102,
+    "word_count": 25,
+    "keywords": [
+      "example3"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p13::c26",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 13,
+    "chunk_index": 26,
+    "text": "Logarithms\nExponentials grow faster than any non-constant\npolynomial\nlim\n18\nn→>80\nfor any d > 0\nThus, their inverses-logarithms-grow slower than any\npolynomial\nln(n)\nn-00",
+    "char_count": 170,
+    "word_count": 25,
+    "keywords": [
+      "polynomial",
+      "logarithms",
+      "exponentials",
+      "grow",
+      "faster",
+      "non-constant",
+      "lim",
+      "thus"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p14::c27",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 14,
+    "chunk_index": 27,
+    "text": "Logarithms\nExample: f(n)=n/2 = Vn is strictly greater than In(n)\nIn(n)\n100",
+    "char_count": 74,
+    "word_count": 12,
+    "keywords": [
+      "logarithms",
+      "strictly",
+      "greater"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "DS+LEC+3+G+CP_8c08a3::p15::c28",
+    "doc_id": "DS+LEC+3+G+CP_8c08a3",
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "page": 15,
+    "chunk_index": 28,
+    "text": "Logarithms\nf(n)=nl/3=n\ngrows slower but only up to n = 93\n(93.354,4.536)\nIn(n)\n100",
+    "char_count": 82,
+    "word_count": 14,
+    "keywords": [
+      "logarithms",
+      "grows",
+      "slower"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p1::c29",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 1,
+    "chunk_index": 29,
+    "text": "Data Structures\nPriority Queues - Binary\nHeaps",
+    "char_count": 46,
+    "word_count": 7,
+    "keywords": [
+      "data",
+      "structures",
+      "priority",
+      "queues",
+      "binary",
+      "heaps"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p2::c30",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 2,
+    "chunk_index": 30,
+    "text": "RecallQueues\n.FIFO:First-In,First-Out\nSome contexts where this seems right?\n.Some contexts where somethings\nshould be allowed to skip ahead in the\nline?",
+    "char_count": 152,
+    "word_count": 21,
+    "keywords": [
+      "contexts",
+      "recallqueues",
+      "fifo",
+      "first-in",
+      "first-out",
+      "seems",
+      "right",
+      "somethings"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p3::c31",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 3,
+    "chunk_index": 31,
+    "text": "Queues that Allow Line Jumping\nNeedanewADT\nOperations: Insert an Item,\nRemove the“\"Best\"Item\n15\n23\ninsert\ndeleteMin\n12\n18\n45",
+    "char_count": 124,
+    "word_count": 19,
+    "keywords": [
+      "insert",
+      "item",
+      "queues",
+      "allow",
+      "line",
+      "jumping",
+      "needanewadt",
+      "operations"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p4::c32",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 4,
+    "chunk_index": 32,
+    "text": "Priority Queue ADT\n1. PQueue data : collection of data with\npriority\n2.PQueueoperations\n-insert\n- deleteMin\n3.PQueue property:for two elements in the\nqueue, xand y, if x has a lower priority\nvalue than y, x will be deleted before y",
+    "char_count": 231,
+    "word_count": 40,
+    "keywords": [
+      "priority",
+      "queue",
+      "pqueue",
+      "data",
+      "adt",
+      "collection",
+      "pqueueoperations",
+      "insert"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p5::c33",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 5,
+    "chunk_index": 33,
+    "text": "Applications of the Priority Queue\nSelect print jobs in order of decreasing\nlength\nForward packetsonrouters inorderof\nurgency\n:Select most frequent symbolsfor\ncompression\n. Sort numbers, picking minimum first",
+    "char_count": 208,
+    "word_count": 28,
+    "keywords": [
+      "select",
+      "applications",
+      "priority",
+      "queue",
+      "print",
+      "jobs",
+      "order",
+      "decreasing"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p6::c34",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 6,
+    "chunk_index": 34,
+    "text": "Potential Implementations\ninsert\ndeleteMin\nUnsorted list (Array)\nUnsorted list (Linked-List)\nSorted list (Array)\nSorted list (Linked-List)",
+    "char_count": 138,
+    "word_count": 16,
+    "keywords": [
+      "list",
+      "unsorted",
+      "array",
+      "linked-list",
+      "sorted",
+      "potential",
+      "implementations",
+      "insert"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p7::c35",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 7,
+    "chunk_index": 35,
+    "text": "Potential Implementations\ninsert\ndeleteMin\nUnsorted list (Array)\n0(1)\n(u)o\n0(1)\nUnsorted list (Linked-List)\nO(n)\n(u)o\nSorted list (Array)\n0(1)*\n(u)o\nSorted list (Linked-List)\n0(1)",
+    "char_count": 179,
+    "word_count": 24,
+    "keywords": [
+      "list",
+      "unsorted",
+      "array",
+      "linked-list",
+      "sorted",
+      "potential",
+      "implementations",
+      "insert"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p8::c36",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 8,
+    "chunk_index": 36,
+    "text": "RecallFromLists,Queues,\nStacks\n.Use an ADT that corresponds to your\nneeds\n: The right ADT is efficient, while an overly\ngeneral ADT provides functionality you\naren't using, but are paying for anyways\nHeapsprovideO(logn)worstcasefor\nboth insert and deleteMin, O(1) average\ninsert",
+    "char_count": 278,
+    "word_count": 39,
+    "keywords": [
+      "adt",
+      "insert",
+      "recallfromlists",
+      "queues",
+      "stacks",
+      "corresponds",
+      "needs",
+      "right"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p9::c37",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 9,
+    "chunk_index": 37,
+    "text": "Binary Heap Properties\n1. Structure Property\n2. Ordering Property",
+    "char_count": 65,
+    "word_count": 9,
+    "keywords": [
+      "property",
+      "binary",
+      "heap",
+      "properties",
+      "structure",
+      "ordering"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p10::c38",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 10,
+    "chunk_index": 38,
+    "text": "Tree Review\nTree T\nroot(T):\nleaves(T):\nchildren(B):\nparent(H):\nsiblings(E):\nancestors(F):\ndescendents(G):\nsubtree(C):\n10",
+    "char_count": 120,
+    "word_count": 13,
+    "keywords": [
+      "tree",
+      "review",
+      "root",
+      "leaves",
+      "children",
+      "parent",
+      "siblings",
+      "ancestors"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p11::c39",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 11,
+    "chunk_index": 39,
+    "text": "Tree Review\nroot(T):A\nTree T\nleaves(T):D,E,FJ,K,,M,N,\nchildren(B):D,E, F\nparent(H):G\nsiblings(E):D,F\nancestors(F):A,B\ndescendents(G)H,I,J,K,L,M,N\nsubtree(C)C-G-(H-J,K,LM,N)and\n11",
+    "char_count": 178,
+    "word_count": 14,
+    "keywords": [
+      "tree",
+      "review",
+      "root",
+      "leaves",
+      "children",
+      "parent",
+      "siblings",
+      "ancestors"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p12::c40",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 12,
+    "chunk_index": 40,
+    "text": "More Tree Terminology\nDepth:thenumberofedges alongthe\npath from the rootto thenode\nTree T\nheight:thenumberof edges alongthe\nlongestpathfromthe nodeto a leaf\ndegree:the number of children ofthe node\nbranchingfactor:the maximum degree of\nany node (or sometimes theaverage)\npreordertraversal:runningthrough all the nodes in\nthe tree, starting with theparent,then all the\nchildren\npostorder traversal: run through all the nodes\nstarting with the children and thenthe parents\n12",
+    "char_count": 473,
+    "word_count": 62,
+    "keywords": [
+      "tree",
+      "children",
+      "alongthe",
+      "degree",
+      "node",
+      "nodes",
+      "starting",
+      "terminology"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p13::c41",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 13,
+    "chunk_index": 41,
+    "text": "More Tree Terminology\nTree T\ndepth(B):\nheight(G):\ndegree(B):\nbranchingfactor(T)\n13",
+    "char_count": 82,
+    "word_count": 10,
+    "keywords": [
+      "tree",
+      "terminology",
+      "depth",
+      "height",
+      "degree",
+      "branchingfactor"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p14::c42",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 14,
+    "chunk_index": 42,
+    "text": "More Tree Terminology\nTree T\ndepth(B):1\nheight(G):2\ndegree(B):3\nbranchingfactor(T):5\n14.",
+    "char_count": 88,
+    "word_count": 10,
+    "keywords": [
+      "tree",
+      "terminology",
+      "depth",
+      "height",
+      "degree",
+      "branchingfactor"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Heaps+Lec+5+CP_63dba3::p15::c43",
+    "doc_id": "Heaps+Lec+5+CP_63dba3",
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "page": 15,
+    "chunk_index": 43,
+    "text": "Brief interlude: Some Definitions:\nA Perfectbinary tree-A binary tree with\nall leaf nodes at the same depth.All\ninternal nodes have 2 children.\nheight h\n2h+1-1 nodes\n2h_1 non-leaves\n2h leaves\n16\n15",
+    "char_count": 197,
+    "word_count": 32,
+    "keywords": [
+      "nodes",
+      "brief",
+      "interlude",
+      "definitions",
+      "perfectbinary",
+      "tree-a",
+      "binary",
+      "tree"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p1::c44",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 1,
+    "chunk_index": 44,
+    "text": "Data Structures\nIntroduction\nData Structures - Introduction",
+    "char_count": 59,
+    "word_count": 7,
+    "keywords": [
+      "data",
+      "structures",
+      "introduction"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p2::c45",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 2,
+    "chunk_index": 45,
+    "text": "Class Overview\nIntroduction to many of the basic data structures\nused in computer software\n- Understand the data structures\n- Analyze the algorithms that use them\n- Know when to apply them\nPractice design and analysis of data structures.\nPractice using these data structures by writing\nprograms.\nMake the transformation from programmer to\ncomputer scientist\nData Structures - Introduction",
+    "char_count": 388,
+    "word_count": 59,
+    "keywords": [
+      "data",
+      "structures",
+      "introduction",
+      "computer",
+      "practice",
+      "class",
+      "overview",
+      "many"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p3::c46",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 3,
+    "chunk_index": 46,
+    "text": "Goals\nYou will understand\n- what the tools are for storing and processing common\ndata types\n- which tools are appropriate for which need\n• So that you can\n- make good design choices as a developer, project\nmanager, or system customer\n: You will be able to\n- Justify your design decisions via formal reasoning\n- Communicate ideas about programs clearly and\nprecisely\nData Structures - Introduction",
+    "char_count": 396,
+    "word_count": 68,
+    "keywords": [
+      "tools",
+      "data",
+      "design",
+      "goals",
+      "understand",
+      "storing",
+      "processing",
+      "common"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p4::c47",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 4,
+    "chunk_index": 47,
+    "text": "Goals\n\"I will, in fact, claim that the difference\nbetween a bad programmer and a good\none is whether he considers his code or\nhis data structures more important. Bad\nprogrammers worry about the code. Good\nprogrammers worry about data structures\nand their relationships.\"\nData Structures - Introduction",
+    "char_count": 301,
+    "word_count": 48,
+    "keywords": [
+      "data",
+      "structures",
+      "bad",
+      "good",
+      "his",
+      "code",
+      "programmers",
+      "worry"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p5::c48",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 5,
+    "chunk_index": 48,
+    "text": "Goals\n\"Show me your flowcharts and conceal\nyour tables, and I shall continue to be\nmystified. Show me your tables, and I\nwon't usually need your flowcharts; they'll\nbe obvious.\"\nData Structures - Introduction",
+    "char_count": 208,
+    "word_count": 34,
+    "keywords": [
+      "show",
+      "flowcharts",
+      "tables",
+      "goals",
+      "conceal",
+      "shall",
+      "continue",
+      "mystified"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p6::c49",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 6,
+    "chunk_index": 49,
+    "text": "Data Structures\nClever\" ways to organize information in\norder to enable efficient computation\n- What do we mean by clever?\n- What do we mean by efficient?\nData Structures - Introduction",
+    "char_count": 185,
+    "word_count": 31,
+    "keywords": [
+      "data",
+      "structures",
+      "clever",
+      "efficient",
+      "mean",
+      "ways",
+      "organize",
+      "information"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p7::c50",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 7,
+    "chunk_index": 50,
+    "text": "A Data Structure delivers a structured set of variables\nrelated to each other in various ways. It forms the basis\nof a programming tool that signifies the relationship\nbetween the data elements and allows programmers to\nprocess the data efficiently.\n: We can classify Data Structures into two categories:\n-PrimitiveDataStructure\n-Non-PrimitiveDataStructure\nData Structures - Introduction",
+    "char_count": 387,
+    "word_count": 55,
+    "keywords": [
+      "data",
+      "structures",
+      "structure",
+      "delivers",
+      "structured",
+      "set",
+      "variables",
+      "related"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p8::c51",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 8,
+    "chunk_index": 51,
+    "text": "Data Structure\nPnmitive\nNon-Primitive\nData Structure\nData Structure\nLinear Cata\nLinanData\nCharacter\nRoat\nBoolean\nStructure\nStrutute\nStatic\nDynamic\nTree\nGraph\nArray\nUinked List\nStack\nQueue\nDita Srutetunes:-Introduction",
+    "char_count": 217,
+    "word_count": 27,
+    "keywords": [
+      "structure",
+      "data",
+      "pnmitive",
+      "non-primitive",
+      "linear",
+      "cata",
+      "linandata",
+      "character"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p9::c52",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 9,
+    "chunk_index": 52,
+    "text": "Primitive Data Structures\n1. Primitive Data Structures are the data structures\nconsisting of numbers and the characters that come\nbuilt into programs.\n2. These data structures can be manipulated or operated\ndirectly by machine-level instructions.\n3.\nBasic data types like Integer, Float, Character, and\nBoolean come under the Primitive Data Structures.\n4. These data types are also called Simple data types, as\nthey contain characters that can't be divided further.\nData Structures - Introduction",
+    "char_count": 496,
+    "word_count": 74,
+    "keywords": [
+      "data",
+      "structures",
+      "primitive",
+      "types",
+      "characters",
+      "consisting",
+      "numbers",
+      "built"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p10::c53",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 10,
+    "chunk_index": 53,
+    "text": "clever - range from techniques with which\nyou are already familiar - eg, representing\nsimple lists - to ones that are more\ncomplex, such as hash tables or selfbalancing trees. Elegant, mathematically\ndeep, non-obvious.\nmaking the different meanings of “efficient\"\nprecise is much of the work of this course!\nData Structures - Introduction",
+    "char_count": 338,
+    "word_count": 53,
+    "keywords": [
+      "clever",
+      "range",
+      "techniques",
+      "already",
+      "familiar",
+      "representing",
+      "simple",
+      "lists"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p11::c54",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 11,
+    "chunk_index": 54,
+    "text": "Picking the best\nData Structure for the job\n: The data structure you pick needs to\nsupport the operations you need\n: Ideally it supports the operations you will\nuse most often in an efficient manner\n: Examples of operations:\n- A List with operations insert and delete\n- A Stack with operations push and pop\nData Structures - Introduction\n11",
+    "char_count": 340,
+    "word_count": 61,
+    "keywords": [
+      "operations",
+      "data",
+      "structure",
+      "picking",
+      "best",
+      "job",
+      "pick",
+      "needs"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p12::c55",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 12,
+    "chunk_index": 55,
+    "text": "Terminology\n: Abstract Data Type (ADT)\n- Mathematical description of an object with set of\noperations on the object. Useful building block.\n: Algorithm\n- A high level, language independent, description of a\nstep-by-step process\n· Data structure\n- A specific family of algorithms for implementing an\nabstract data type.\n: Implementation of data structure\n- A specific implementation in a specific language\nData Structures - Introduction\n12",
+    "char_count": 438,
+    "word_count": 68,
+    "keywords": [
+      "data",
+      "specific",
+      "abstract",
+      "type",
+      "description",
+      "object",
+      "language",
+      "structure"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p13::c56",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 13,
+    "chunk_index": 56,
+    "text": "Terminology examples\n: A stack is an abstract data type supporting\npush, pop and isEmpty operations\n: A stack data structure could use an array, a\nlinked list, or anything that can hold data\n: One stack implementation is java.util.Stack;\nanother is java.util.LinkedList\nData Structures - Introduction\n13",
+    "char_count": 303,
+    "word_count": 48,
+    "keywords": [
+      "stack",
+      "data",
+      "java",
+      "util",
+      "terminology",
+      "examples",
+      "abstract",
+      "type"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p14::c57",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 14,
+    "chunk_index": 57,
+    "text": "Concepts\nMechanisms\nAbstract\nConcrete\n· Pseudocode\n: Specific programming language\n. Algorithm\n· Program\n-Asequence of high-level,\n- A sequence of operations in a\nlanguageindependent\nspecific programming language,\noperations, which may act\nwhich may act upon real data in\nupon an abstracted view of\nthe form of numbers, images,\ndata.\nsound, etc.\n·Abstract Data Type (ADT)\n·Data structure\n-Amathematicaldescription\n- A specific way in which a\nof an object and the set of\nprogram's data is represented,\noperations on the object.\nwhich reflects the programmer's\ndesign choices/goals.\nData Structures - Introduction\n14",
+    "char_count": 614,
+    "word_count": 92,
+    "keywords": [
+      "data",
+      "specific",
+      "operations",
+      "abstract",
+      "programming",
+      "language",
+      "program",
+      "may"
+    ],
+    "extraction_method": "ocr"
+  },
+  {
+    "chunk_id": "Lec+1+Intro+DS+CP_(2)_3cd428::p15::c58",
+    "doc_id": "Lec+1+Intro+DS+CP_(2)_3cd428",
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "page": 15,
+    "chunk_index": 58,
+    "text": "Why So Many Data Structures?\nIdeal data structure:\n\"fast\", “\"elegant\", memory efficient\nGenerates tensions:\n- time vs. space\n- performance vs. elegance\n- generality vs. simplicity\n- one operation's performance vs. another's\nThe study of data structures is the study of\ntradeoffs. That's why we have so many of\nthem!\nData Structures - Introduction\n15",
+    "char_count": 349,
+    "word_count": 55,
+    "keywords": [
+      "data",
+      "structures",
+      "why",
+      "many",
+      "performance",
+      "study",
+      "ideal",
+      "structure"
+    ],
+    "extraction_method": "ocr"
+  }
+]

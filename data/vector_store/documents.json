@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "DS+Lec+2+G+CP.pdf",
+    "size_kb": 3751.8,
+    "pages_extracted": 15,
+    "ocr_pages": 15,
+    "chunks": 15,
+    "total_words": 571
+  },
+  {
+    "filename": "DS+LEC+3+G+CP.pdf",
+    "size_kb": 5075.5,
+    "pages_extracted": 14,
+    "ocr_pages": 14,
+    "chunks": 14,
+    "total_words": 425
+  },
+  {
+    "filename": "Heaps+Lec+5+CP.pdf",
+    "size_kb": 1214.0,
+    "pages_extracted": 15,
+    "ocr_pages": 15,
+    "chunks": 15,
+    "total_words": 344
+  },
+  {
+    "filename": "Lec+1+Intro+DS+CP (2).pdf",
+    "size_kb": 3531.8,
+    "pages_extracted": 15,
+    "ocr_pages": 15,
+    "chunks": 15,
+    "total_words": 780
+  }
+]
